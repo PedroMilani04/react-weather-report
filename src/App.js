@@ -38,24 +38,24 @@ function App() {
             
           </div>
           <div className="temperature">
-            {data.main ? <h1>{(data.main.temp - 273.15).toFixed(2)}°C</h1> : null}
+            {data.main ? <h1>{(data.main.temp - 273.15).toFixed(1)}°C</h1> : null}
             
           </div>
           <div className="weather-desc">
-            <p>Sunny</p>
+            {data.weather ? <p>{data.weather[0].main}</p> : null}
           </div>
         </div>
         <div className="bottom">
           <div className="temperature-feels">
-            <p>60°F</p>
+            <p>{data.main ? <p>{(data.main.feels_like - 273.15).toFixed(1)}°C</p> : null}</p>
             <p className="desc">Feels like</p>
           </div>
           <div className="humidity">
-            <p>30%</p>
+          <p>{data.main ? <p>{(data.main.humidity).toFixed(1)}%</p> : null}</p>
             <p className="desc">Humidity</p>
           </div>
           <div className="winds">
-            <p>6 MPH</p>
+          <p>{data.wind ? <p>{(data.wind.speed).toFixed(1)} MPH</p> : null}</p>
             <p className="desc">Wind speed</p>
           </div>
         </div>
