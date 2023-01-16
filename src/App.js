@@ -42,7 +42,7 @@ function App() {
             
           </div>
           <div className="weather-desc">
-            {data.weather ? <p>{data.weather[0].main}</p> : null}
+            {data.weather ? <p>{(data.weather[0].description).charAt(0).toUpperCase() + (data.weather[0].description).slice(1)}</p> : null}
           </div>
         </div>
         <div className="bottom">
