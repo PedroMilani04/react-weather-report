@@ -55,7 +55,7 @@ function App() {
             <p className="desc">Humidity</p>
           </div>
           <div className="winds">
-          <p>{data.wind ? <p>{(data.wind.speed).toFixed(1)} MPH</p> : null}</p>
+          <p>{data.wind ? <p>{((data.wind.speed) * 1.6).toFixed(1)} KPH</p> : null}</p>
             <p className="desc">Wind speed</p>
           </div>
         </div>
