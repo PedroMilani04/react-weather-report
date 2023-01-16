@@ -19,6 +19,13 @@ code {
     monospace;
 }
 
+.loccountry {
+  display: flex;
+
+}
+.p2 {
+  margin-left: 2%;
+}
 
 p {
   font-size: 2rem;

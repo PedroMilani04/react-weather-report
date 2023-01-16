@@ -15,8 +15,8 @@ function App() {
       setLocation('')
     }
   }
+ 
 
-  
   // começar app em baixo
   return (
     <div className="App">
@@ -29,17 +29,17 @@ function App() {
           placeholder="Insert Location"
           type="text"
         />
-
+        
       </div>
       <div className="container">
         <div className="top">
           <div className="location">
-            <p>{data.name}</p>
-            
+            <p className="loccountry">{data.name}  {data.sys ? <p className="p2"> - {data.sys.country}</p> : null}</p>
+
           </div>
           <div className="temperature">
             {data.main ? <><h1>{(data.main.temp - 273.15).toFixed(1)}</h1><h2>°C</h2></> : null}
-            
+
           </div>
           <div className="weather-desc">
             {data.weather ? <p>{(data.weather[0].description).charAt(0).toUpperCase() + (data.weather[0].description).slice(1)}</p> : null}
@@ -51,11 +51,11 @@ function App() {
             <p className="desc">Feels like</p>
           </div>
           <div className="humidity">
-          <p>{data.main ? <p>{(data.main.humidity).toFixed(1)}%</p> : null}</p>
+            <p>{data.main ? <p>{(data.main.humidity).toFixed(1)}%</p> : null}</p>
             <p className="desc">Humidity</p>
           </div>
           <div className="winds">
-          <p>{data.wind ? <p>{((data.wind.speed) * 1.6).toFixed(1)} KPH</p> : null}</p>
+            <p>{data.wind ? <p>{((data.wind.speed) * 1.6).toFixed(1)} KPH</p> : null}</p>
             <p className="desc">Wind speed</p>
           </div>
         </div>
