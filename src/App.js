@@ -38,7 +38,7 @@ function App() {
             
           </div>
           <div className="temperature">
-            {data.main ? <h1>{(data.main.temp - 273.15).toFixed(1)}°C</h1> : null}
+            {data.main ? <><h1>{(data.main.temp - 273.15).toFixed(1)}</h1><h2>°C</h2></> : null}
             
           </div>
           <div className="weather-desc">
