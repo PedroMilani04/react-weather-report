@@ -132,7 +132,11 @@ input {
 color: white;
 margin-left: 5%;
 }
-
+input:hover {
+  opacity: 0.85;
+  transform: scale(105%);
+  transition: ease-in-out .1s;
+}
 @media(max-width: 425px) {
   p {
     font-size: 1.6rem;
