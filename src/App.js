@@ -5,6 +5,7 @@ function App() {
   const [location, setLocation] = useState('')
   const [country, setCountry] = useState('')
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${location},&appid=7989b48507389ed58967d1ad0f43715f`
+  const API_KEY = `AIzaSyCSm0z0O3JnDUjtkOrfpnEdgmboMarPYUs`
 
   const searchLocation = (event) => {
     if (event.key === 'Enter') {
@@ -15,7 +16,6 @@ function App() {
       setLocation('')
     }
   }
- 
 
   // começar app em baixo
   return (
@@ -45,15 +45,9 @@ function App() {
             {data.weather ? <p>{(data.weather[0].description).charAt(0).toUpperCase() + (data.weather[0].description).slice(1)}</p> : null}
           </div>
           <div className="weather-desc">
-            {data.weather ? <iframe
-              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d57706628.732183024!2d8.23477268926637!3d28.02040743149768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1673998184966!5m2!1spt-BR!2sbr"
-              
-              frameBorder="0"
-              style={{ border: 0 }}
-              allowFullScreen=""
-              aria-hidden="false"
-              tabIndex="0"
-            /> : null}
+          {data.weather ? <iframe name="iframes" 
+          src={`https://www.google.com/maps/embed/v1/place?q=${data.coord.lat},${data.coord.lon}&key=${API_KEY}`}>
+          </iframe> : null}
           </div>
           
         </div>
