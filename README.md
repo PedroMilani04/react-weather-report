@@ -1,70 +1,65 @@
-# Getting Started with Create React App
+<div align="center">
+  
+# <a href="http://react-calculator-kappa-ten.vercel.app/">React Calculator</a>
+  
+  <img alt="GitHub" src="https://img.shields.io/github/license/ViniUme/LimitsGym?color=ff1c27&style=for-the-badge">
+  <img alt="GitHub tag (latest by date)" src="https://img.shields.io/github/v/tag/ViniUme/LimitsGym?color=2c2c2c&label=version&style=for-the-badge">
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+  <br>
 
-## Available Scripts
+ 
+</div>
 
-In the project directory, you can run:
+<br>
 
-### `npm start`
+## About
+A fully functional calculator project, made with ReactJS and CSS. Has all the basic functions and operations of an actual calculator with a personal design.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<br>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Team
+<a href="https://github.com/PedroMilani04" target="_blank">Pedro H. Milani Vagula</a><br>
 
-### `npm test`
+<br>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Technologies Used
+<table>
+  <tr>
+    <td>Front End</td>
+    <td>Back End</td>
+  </tr>
+  <tr>
+     <td><img src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white"></td>
+    <td><img src="https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white"></td>
+  </tr>
+  <tr>
+    <td><img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white"></td>
+    
+  </tr>
+  <tr>
+    <td><img src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB"></td>
+  </tr>
+  <tr>
+    <td><img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"></td>
+  </tr>
+</table>
+Also included are some npm libraries, such as nookies, react-modal and remask. Respectively used to manage browser cookies, create pop-ups on display, and use mask on inputs.
 
-### `npm run build`
+<br><br>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## How to Run
+Clone this repository:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    git clone https://github.com/PedroMilani04/react-calculator.git
+    
+Have Node.js installed in your computer. With terminal opened in project folder, install the dependencies :
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    npm install
+        or
+    yarn
+    
+Then type this command in to run local server:
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+    npm run dev
+       or
+    yarn dev
