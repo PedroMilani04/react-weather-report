@@ -1,6 +1,6 @@
 <div align="center">
   
-# <a href="http://react-calculator-kappa-ten.vercel.app/">React Calculator</a>
+# <a href="https://react-weather-report.vercel.app/">React Weather Report</a>
   
   <img alt="GitHub" src="https://img.shields.io/github/license/ViniUme/LimitsGym?color=ff1c27&style=for-the-badge">
   <img alt="GitHub tag (latest by date)" src="https://img.shields.io/github/v/tag/ViniUme/LimitsGym?color=2c2c2c&label=version&style=for-the-badge">
@@ -13,7 +13,7 @@
 <br>
 
 ## About
-A fully functional calculator project, made with ReactJS and CSS. Has all the basic functions and operations of an actual calculator with a personal design.
+A Weather Forecast application made with ReactJS and OpenWeatherMap API, containing 200.000+ cities, temperature, wind speed, humidity and more!
 
 <br>
 
